@@ -1,0 +1,32 @@
+.notifications {
+    min-width: 300px;
+    padding: 25px 15px;
+
+    &__header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 25px;
+    }
+
+    &__title{
+        font-weight: 800;
+        font-size: 1.3rem;
+    }
+
+    &__unread{
+        background-color: var(--primary-blue);
+        color: var(--neutral-white);
+        border-radius: 5px;
+        padding: 0 12px;
+        margin-left: 10px;
+    }
+
+    &__readall{
+        color: var(--neutral-dark-grayish-blue);
+
+        &:hover {
+            color: var(--primary-blue);
+        }
+    }
+}
