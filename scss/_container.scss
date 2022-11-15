@@ -1,4 +1,13 @@
+@use 'mixin';
+
 .container {
     min-width: 300px;
-    padding: 25px 15px;
+    min-height: 100vh;
+    background-color: var(--neutral-very-light-grayish-blue);
+
+    @include mixin.medium {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }

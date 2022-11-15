@@ -25,12 +25,22 @@ html, body {
 
 .container {
   min-width: 300px;
-  padding: 25px 15px;
+  min-height: 100vh;
+  background-color: var(--neutral-very-light-grayish-blue);
+}
+@media screen and (min-width: 720px) {
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .notifications {
   min-width: 300px;
+  max-width: 720px;
   padding: 25px 15px;
+  background-color: var(--neutral-white);
 }
 .notifications__header {
   display: flex;
@@ -54,6 +64,12 @@ html, body {
 }
 .notifications__readall:hover {
   color: var(--primary-blue);
+}
+@media screen and (min-width: 720px) {
+  .notifications {
+    padding: 35px 30px 0 30px;
+    border-radius: 10px;
+  }
 }
 
 .notification {
@@ -93,6 +109,8 @@ html, body {
 .notification__info--picture {
   display: flex;
   align-items: start;
+  justify-content: space-between;
+  width: 100%;
 }
 .notification__message {
   margin-top: 10px;
